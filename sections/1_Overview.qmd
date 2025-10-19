@@ -1,0 +1,19 @@
+# Progress Overview
+
+|     | Progress | Failure |
+| --- | -------- | ------- |
+| WP1 | Implementation of classical Poisson-Nernst-Planck electrokinetic transport <br> - Segregated solver <br> - Numerical stability <br> Parametric Case Setup: <br>     - Pore geometry coupling with electrochemical dimensionless numbers   | Late times charging dynamics verification <br> - Large computational cost |
+| WP2 | Zero-flux boundary layer <br> - Sub-grid zero-flux boundary layer          | Mass conservation testing <br>  - Benchmark incompatibility        |
+| WP3 | Extensible class inheritance structure <br> - Modifications of Poisson-Nernst-Planck transport equations available    |        |
+| WP4 |          |         |
+| WP5 |          |         |
+ 
+:  {.striped .hover} 
+
+::: {.notes}
+
+Future plans of modifying PNP
+
+verification is not flexible
+
+:::

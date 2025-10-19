@@ -1,0 +1,58 @@
+# Outlook 
+
+
+- Reference solutions
+    - _Early-time_ dynamics^[Filipe Henrique, Pawel J. Zuk, and Ankur Gupta. Charging dynamics of electrical double layers inside a cylindrical pore: predicting the effects of  arbitrary pore size. Soft Matter, 18(1):198–213, 2022.]: 
+      Instantaneous concentration and electric potential field step response in nanopore
+    - _Late-time_ (charging) dynamics^[T. Aslyamov and M. Janssen, “Analytical solution to the Poisson–Nernst–Planck equations for the charging of a long electrolyte-filled slit pore,” Electrochimica Acta, vol. 424. Elsevier BV, p. 140555, Aug. 2022. doi: 10.1016/j.electacta.2022.140555.]:
+      Bi-exponental slowdown of species concentration accumulation
+ 
+ 
+
+
+- Improvement candidates:
+
+:::: {.columns style="width: 100%; padding-left: 2em;" .fragment}
+
+::: {.column width="47%"}
+
+◦ Block matrix coupling scheme ^[F. Pimenta and M. A. Alves, ‘A coupled finite-volume solver for numerical simulation of electrically-driven flows’, Computers & Fluids, vol. 193, p. 104279, Oct. 2019.] (WP1) <br>
+    Stability and cost 
+![](_Medias/BlockPNP.png){height="100%" style="text-align:center"}
+ 
+::: 
+
+<!-- left col -->
+
+::: {.column width="47%" style="text-align:left" .fragment}
+
+◦ Modified Poisson-Nernst-Planck variations (WP3) <br>
+    Mass Conservation, transport dynamics near walls, moderate voltages
+
+![Fuhrmann et al.^[J. Fuhrmann, C. Guhlke, A. Linke, C. Merdon, and R. Müller, ‘Models and Numerical Methods for Electrolyte Flows’, in Topics in Applied Analysis and Optimisation, Springer International Publishing, 2019, pp. 183–209.]'s proposal to modify the Gouy-Chapman solution near walls for moderate voltages](_Medias/FuhrmannReasonable.png){height="5in" style="text-align:center"}
+ 
+::: 
+<!-- right col -->
+
+:::: 
+<!-- cols --> 
+
+
+
+
+
+
+::: {.notes}
+
+Verification in 2 steps: new benchmark for early-time solution, solver speedup for late-time solution
+
+Important to give quick verification: compare and combine PNP modification proposals
+
+Numerical stability can allow longer time steps -> reach late-times quicker
+
+Fuhrmann's is just an example for PNP modification proposals. None of these proposals have charging dynamics results yet.
+
+:::
+ 
+
+

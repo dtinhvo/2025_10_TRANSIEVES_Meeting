@@ -1,0 +1,176 @@
+# Numerical Methods
+
+<!--TODO planning-->
+
+## Algorithm 
+
+:::::: {.columns style="width: 100%;"}
+ 
+
+::::: {.column style="width: 60%;"}
+ 
+:::: {.columns style="width: 100%;"}
+
+::: {.column width="30%" .fragment fragment-index=1}
+
+Navier-Stokes Equations
+
+::: 
+<!-- left col -->
+
+
+::: {.column  style="text-align:left" .fragment}
+
+$$
+	\frac{\partial}{\partial t}[\rho\mathbf{v}] + \nabla \cdot \{\rho\mathbf{v}\mathbf{v}\} = -\nabla p + \nabla \cdot \left\{\mu\left[\nabla\mathbf{v} + (\nabla\mathbf{v})^{\text{T}}\right]\right\} 
+$$
+
+$$
+	\frac{\partial\rho}{\partial t} +\nabla\cdot  (\rho\mathbf{u}_{}) = 0   
+$$
+
+::: 
+
+<!-- right col -->
+
+:::: 
+
+<!-- top cols -->
+
+
+:::: {.columns style="width: 100%;" }
+
+::: {.column width="30%" .fragment}
+
+Species Transport &
+
+
+Gauss law 
+::: 
+<!-- left col -->
+
+::: {.column style="text-align:left"  .fragment}
+
+$$
+  \frac{ \partial c_{i} }{ \partial t } = \nabla \cdot(D_{i}\nabla   c_{i})
+	+ \nabla \cdot 
+	[(
+    \underbrace{ D_{i} \dfrac{ez_{i}}{kT} }
+    _{ \text{Stokes-Einstein relation} }\nabla \Psi)c_{i}
+    ]
+$$
+
+$$
+  \nabla^2 \Psi _{E}   =\frac{-\rho_E}{\epsilon\epsilon_{0}} = \frac{-F \sum_{i} z_{i}  c_{i}}{ \epsilon\epsilon_{0}} 
+$$
+
+::: 
+<!-- right col -->
+
+::::: 
+<!-- bottom cols -->
+ 
+:::: 
+ 
+::::: {.column style="width: 40%;" .fragment}  
+
+
+Algorithm:
+
+![Coupling Algorithm](_Medias/algo.svg){height="9in" style="text-align:center"}
+ 
+<!-- TODO this needs to be wider: svg -->
+
+:::::  
+ 
+::::::  
+
+
+::: {.notes}
+
+Classical PNP that has provides verification from lit. benchmarks
+
+Algo to provide numerical robustness and stability
+
+:::  
+
+## Boundary conditions
+
+
+:::: {.columns style="width: 100%;" .fragment}
+
+::: {.column width="50%" }
+
+
+::: {.fragment} 
+
+- Zero Ionic Flux  
+    Neumann type 
+    - Enforcing zero species concentration flux across the charged wall.
+
+$$
+    \left[ \nabla \cdot c_{i} \right]_{f}  \cdot n_{\perp} \mathbf{A}_{_{f}}    
+    =   
+    - \left[ \frac{\mu_{i}}{D_{i}}\left( \nabla \Psi \right)c_{i} \right]_{f} \cdot \mathbf{A}_{_{f}}
+$$
+
+$$
+    \longrightarrow \nabla c_{i,P} + \frac{\mu_{i}}{D_{i}}\left( \nabla \Psi_{f} \right)c_{i,P} = 0 
+$$
+:::
+
+::: {.fragment}
+
+- Subgrid Zero Ionic Flux  
+    Dirichtlet-type
+    - Enforces zero species flux.
+    - Includes exponential concentration distribution in the cells next to charged pore wall.
+
+$$
+
+c_{i,P}^P  =  c_{i,f}^S  \exp( \frac{\mu_{i}}{D_{i}}  ( 
+{ \Psi{}_{f} }  
+  -  
+{ \Psi{}_{P}  }   
+)    )
+
+$$
+
+::: 
+
+::: 
+
+<!-- left col -->
+
+::: {.column width="50%" style="text-align:left" }
+
+![](_Medias/subgrid.svg){height="8in" style="text-align:center"}
+
+::: 
+<!-- right col -->
+
+:::: 
+<!-- cols --> 
+
+ 
+
+
+
+::: {.callout-caution icon=false title="Not tested!" .fragment} 
+
+Implemented, but incompatible with benchmark described by ^[T. Aslyamov and M. Janssen, “Analytical solution to the Poisson–Nernst–Planck equations for the charging of a long electrolyte-filled slit pore,” Electrochimica Acta, vol. 424. Elsevier BV, p. 140555, Aug. 2022. doi: 10.1016/j.electacta.2022.140555.] 
+
+:::  
+
+
+::: {.notes}
+
+Same goal: enforce mass conservation
+
+Although implemented, they are not compared or verified: due to incompatibility with benchmark case. 
+
+Alternative benchmark case is in progress
+
+:::  
+
+ 

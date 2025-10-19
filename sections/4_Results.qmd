@@ -1,0 +1,67 @@
+# Results
+
+
+ 
+
+## Electric potential & species transport
+<!--Psi field-->
+
+![Case Setup^[T. Aslyamov and M. Janssen, “Analytical solution to the Poisson–Nernst–Planck equations for the charging of a long electrolyte-filled slit pore,” Electrochimica Acta, vol. 424. Elsevier BV, p. 140555, Aug. 2022. doi: 10.1016/j.electacta.2022.140555.]](_Medias/AslyamovSetup.svg){height="3.75in" style="text-align:center"}
+
+
+- Results for $D = 1e-9 \mathrm{m/s^2},\frac{\lambda_D}{H}= 20.7 \mathrm{m}\ ,c_{Bulk} = 0.001 \mathrm{M}, \Psi_{wall} = 0.025 \frac{k_BT}{e},  t = 0.036  \frac{4}{\pi{}^{2}} \frac{L^{2}}{D} \frac{2\lambda{}_{D }}{{H}} \cosh \left( \frac{\Psi_{wall}}{2 \Psi_T} \right)$ 
+    -  Corresponds to **8600000 time steps** for 9500 cells!
+
+:::: {.columns style="width: 100%;" .fragment}
+
+::: {.column width="50%"}
+
+
+![Electric potential field at pore inlet ](_Medias/Psi_E_normalized.png){height="100%" style="text-align:center"}
+ 
+
+::: 
+
+<!-- left col -->
+
+::: {.column width="50%" style="text-align:left" .fragment}
+
+![Salt concentation field at pore inlet](_Medias/rho_E_nondim.png){height="100%" style="text-align:center"}
+
+
+::: 
+<!-- right col -->
+
+:::: 
+<!-- cols --> 
+
+
+<!-- c field -->
+ 
+
+::: {.notes}
+
+Preliminary results for coupled 
+
+Not a suitable verification for transport mechanics, because this benchmark does not describe early-time potential or concentration solutions
+
+(explain incompatible BCs for this case)
+
+:::  
+ 
+
+## Charging dynamics
+ 
+ 
+![Analytical charging rate of a uniformly charged 2D nanopore ^[T. Aslyamov and M. Janssen, “Analytical solution to the Poisson–Nernst–Planck equations for the charging of a long electrolyte-filled slit pore,” Electrochimica Acta, vol. 424. Elsevier BV, p. 140555, Aug. 2022. doi: 10.1016/j.electacta.2022.140555.]](_Medias/charging.png){height="100%" style="text-align:center"}
+ 
+
+
+::: {.notes}
+
+Computational cost prevents verification: late-time only
+
+Shows future issues in demonstrating agreement with charging mechanics lit.
+
+:::  
+ 

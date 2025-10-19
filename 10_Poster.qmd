@@ -1,0 +1,37 @@
+---
+title: "Highly accurate simulation <br> of electrokinetic transport"
+author: 
+  name: Tinh Vo, Dr-Ing. Holger Marschall
+  affiliation: Computational Multiphase Flow, TU Darmstadt
+date: last-modified
+date-format: "DD MMM, YYYY"
+format: 
+  tvo_TRANSIEVES-revealjs:
+    center-title-slide: false
+    title-slide: false
+  revealjs: 
+    css: tvo_TRANSIEVES/styles.css
+    include-in-header: persistent-header/persistent-header.html # currently have no effect
+    title-slide: false
+filters: 
+  - reveal-header
+slide-level: 3 # affects reveal-header persistence
+number-sections: false
+---
+
+{{< include sections/1_Overview.qmd >}}
+
+
+<!-- 1. Generalized Poisson-Nernst-Planck equation system  -->
+<!-- 2. Implicitly coupled Nernst-Planck equations -->
+<!-- 3. Subgrid-Scale Stern Layer correction -->
+<!-- 4. Hybrid-Atomistic-Continuum solver -->
+
+{{< include sections/3_NumericalMethods.qmd >}}
+
+{{< include sections/4_Results.qmd >}}
+
+{{< include sections/5_Outlook.qmd >}}
+ 
+
+{{< include sections/dummy.qmd >}}

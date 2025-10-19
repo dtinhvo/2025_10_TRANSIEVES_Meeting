@@ -1,0 +1,4 @@
+<!--BUG!! ## presists past # change, and comes back when *** (even though next # has no ##) -->
+<!-- FEAT test SI imitation https://chatgpt.com/c/68f4bb8b-8b44-8328-ac88-cae0cd3f62df -->
+
+<!--FEAT indented sublist items into 2 cols with :::: {.columns style="width: 100%; padding-left: 2em;" .fragment} -->
