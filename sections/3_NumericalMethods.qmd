@@ -127,13 +127,9 @@ $$
     - Includes exponential concentration distribution in the cells next to charged pore wall.
 
 $$
-
 c_{i,P}^P  =  c_{i,f}^S  \exp( \frac{\mu_{i}}{D_{i}}  ( 
-{ \Psi{}_{f} }  
-  -  
-{ \Psi{}_{P}  }   
+{ \Psi{}_{f} }    -  { \Psi{}_{P}  }   
 )    )
-
 $$
 
 ::: 
