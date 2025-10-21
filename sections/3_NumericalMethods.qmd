@@ -77,7 +77,7 @@ $$
 
 Algorithm:
 
-![Coupling Algorithm](_Medias/algo.svg){height="9in" style="text-align:center"}
+![Coupling Algorithm ^[F. Pimenta and M. A. Alves, “Numerical simulation of electrically-driven flows using OpenFOAM.” arXiv, 2018. doi: 10.48550/ARXIV.1802.02843.]](_Medias/algo.svg){height="9in" style="text-align:center"}
  
 <!-- TODO this needs to be wider: svg -->
 
@@ -121,7 +121,7 @@ $$
 
 ::: {.fragment}
 
-- Subgrid Zero Ionic Flux  
+- Subgrid Zero Ionic Flux ^[F. Pimenta and M. A. Alves, “Numerical simulation of electrically-driven flows using OpenFOAM.” arXiv, 2018. doi: 10.48550/ARXIV.1802.02843.]  
     Dirichtlet-type
     - Enforces zero species flux.
     - Includes exponential concentration distribution in the cells next to charged pore wall.
