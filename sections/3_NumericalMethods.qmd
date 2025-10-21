@@ -115,7 +115,7 @@ $$
 $$
 
 $$
-    \longrightarrow \nabla c_{i,P} + \frac{\mu_{i}}{D_{i}}\left( \nabla \Psi_{f} \right)c_{i,P} = 0 
+    \longrightarrow \nabla c_{i,f} + \frac{\mu_{i}}{D_{i}}\left( \nabla \Psi_{f} \right)c_{i,f} = 0 
 $$
 :::
 
