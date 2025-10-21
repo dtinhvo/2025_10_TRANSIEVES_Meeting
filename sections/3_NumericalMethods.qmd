@@ -109,7 +109,7 @@ Algo to provide numerical robustness and stability
     - Enforcing zero species concentration flux across the charged wall.
 
 $$
-    \left[ \nabla \cdot c_{i} \right]_{f}  \cdot n_{\perp} \mathbf{A}_{_{f}}    
+    \left[ \nabla c_{i} \right]_{f}  \cdot n_{\perp} \mathbf{A}_{_{f}}    
     =   
     - \left[ \frac{\mu_{i}}{D_{i}}\left( \nabla \Psi \right)c_{i} \right]_{f} \cdot \mathbf{A}_{_{f}}
 $$
