@@ -9,7 +9,7 @@
 ![Case Setup^[T. Aslyamov and M. Janssen, “Analytical solution to the Poisson–Nernst–Planck equations for the charging of a long electrolyte-filled slit pore,” Electrochimica Acta, vol. 424. Elsevier BV, p. 140555, Aug. 2022. doi: 10.1016/j.electacta.2022.140555.]](_Medias/AslyamovSetup.svg){height="3.75in" style="text-align:center"}
 
 
-- Results for $D = 1e-9 \mathrm{m/s^2},\frac{\lambda_D}{H}= 20.7 \mathrm{m}\ ,c_{Bulk} = 0.001 \mathrm{M}, \Psi_{wall} = 0.025 \frac{k_BT}{e},  t = 0.036  \frac{4}{\pi{}^{2}} \frac{L^{2}}{D} \frac{2\lambda{}_{D }}{{H}} \cosh \left( \frac{\Psi_{wall}}{2 \Psi_T} \right)$ 
+- Results for $D = 1e-9 \mathrm{m/s^2},\frac{\lambda_D}{H}= 20.7 \ ,c_{Bulk} = 0.001 \mathrm{M}, \Psi_{wall} = 0.025 \frac{k_BT}{e},  t = 0.036  \frac{4}{\pi{}^{2}} \frac{L^{2}}{D} \frac{2\lambda{}_{D }}{{H}} \cosh \left( \frac{\Psi_{wall}}{2 \Psi_T} \right)$ 
     -  Corresponds to **8600000 time steps** for 9500 cells!
 
 :::: {.columns style="width: 100%;" .fragment}
